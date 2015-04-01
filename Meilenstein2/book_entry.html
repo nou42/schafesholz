@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="book_entry.css">
+<style type="text/css">
+/* ... hier sind dateispezifische Formate erlaubt ... */
+</style>
+<meta charset="UTF-8">
+<title>Meilenstein 2</title>
+</head>
+<body>
+
+<p><span class="a">Buch anlegen</span></p>
+	
+	<table>
+		<form method="get" action="http://martinakraus.net/createBookEntry.php">
+		
+			<tr>
+				<td><span class="b">Titel des Buches </span></td>
+				<td><input type="text" name="titel" size="30" maxlength="40"/></td>
+			</tr>
+	
+			<tr>
+				<td><span class="b">Buchautor</span></td>
+				<td><input type="text" name="autor" size="30" maxlength="40"/></td>
+			</tr>
+			
+			<tr>
+				<td><span class="b">ISBN</span></td>
+				<td><input type="text" name="isbn" size="30" maxlength="40"/></td>
+			</tr>
+			
+			<tr>
+				<td><span class="b">Kapitel</span></td>
+				<td><input type="text" name="kapitel" size="30" maxlength="40"/></td>
+			</tr>
+			
+			<tr>
+				<td><span class="b">Erscheinungsjahr</span></td>
+				<td><input type="text" name="jahr" size="30" maxlength="40"/></td>
+			</tr>
+			
+			<tr>
+				<td><span class="b">Auflage</span></td>
+				<td><input type="text" name="auflage" size="30" maxlength="40"/></td>
+			</tr>
+			
+			<tr>
+				<td><span class="b">Art des Buches</span>
+				<td><select name="art" size="1">
+					<option value="ebook">eBook</option> 
+					<option value="newspaper">Newspaper</option> 
+					<option value="taschenbuch">Taschenbuch</option>
+					<option value="lexikon">Lexikon</option>
+					<option value="hardcover" selected="selected">Hardcover</option>
+					<option value="paperback">Paperback</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><span class="b">Genre</span></td>
+				<td><span class="c"><input type="checkbox" name="genre" value="horror" checked="checked"/>Horror
+					<input type="checkbox" name="genre" value="psycho"/>Psycho<br>
+					<input type="checkbox" name="genre" value="krimi"/>Krimi
+					<input type="checkbox" name="genre" value="doku"/>Doku
+					<input type="checkbox" name="genre" value="komödie"/>Komödie
+					<input type="checkbox" name="genre" value="romanze"/>Romanze
+					</span></td>
+			</tr>
+					<input type="button" name="absenden" value="Absenden"/>
+				
+
+Ihr Vorname <input type="text" name="vorname" size="30" maxlength="40"/><br>
+Ihr Nachname <input type="text" name="nachname" size="30" maxlength="40"/><br>
+Mein Favorit <input type="checkbox" name="filmfavorit"/>
+		
+		</form>
+	</table>
+
+
+</body>
+</html>

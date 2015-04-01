@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+body    {
+    background-color: rgb(153,217,234);
+    font-family: Arial;
+}
+
+div {
+    text-align: center;
+    font-size: 22px;
+    font-family: Arial;
+    color: rgb(0,0,0);
+    font-weight: bold;
+    
+}
+
+span {
+        color: rgb(63,72,204);
+}

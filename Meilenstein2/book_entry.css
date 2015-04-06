@@ -15,6 +15,7 @@ p {
 td {
 	padding: 3px;
 	vertical-align: top;
+	horizontal-align: left;
 }
 
 th {
@@ -27,20 +28,36 @@ label {
 	margin-right: 30px;
 }
 
-.genre{
+.genre {
 	font-size: 14px;
 }
 
-#dataOfBook{
+#dataOfBook {
+	margin: 60px 0px 30px 60px;
 	float: left;
+	width: 560px;
+	overflow: scroll;
 }
 
-#dataOfUser{
-	float: right;
-	width: 160
+#dataOfUser {
+	margin: 60px 0px 30px 60px;
+	width: 480px;
+	float: left;
+	overflow: scroll;
 }
 
-#absenden{
+#absenden {
 	clear: both;
 	text-align: center;
+}
+
+input[type=submit] {
+	font-size: 14px;
+	padding: 5px 60px;
+	margin: 60px;
+	cursor: pointer;
+	background-color: rgb(0, 162, 232);
+	border-color: rgb(63, 72, 204);
+	border-style: solid;
+	border: 10px 10px;
 }

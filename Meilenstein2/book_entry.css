@@ -1,68 +1,46 @@
 @CHARSET "UTF-8";
 
-body    {
-    background-color: rgb(153,217,234);
-    font-family: Arial;
+body {
+	background-color: rgb(153, 217, 234);
+	font-family: Arial;
 }
 
 p {
-    text-align: center;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: rgb(63, 72, 204);
 }
 
-table {
-    width: 50%;
-    height: 60%;
-}
-
-
-td  {
-    padding: 3px;
+td {
+	padding: 3px;
+	vertical-align: top;
 }
 
 th {
-    border-bottom: solid 1px black;
+	border-bottom: solid 1px black;
 }
 
-.a {
-    font-size: 22px;
-    font-weight: bold;
-    color: rgb(63,72,204);
+label {
+	font-size: 16px;
+	color: rgb(63, 72, 204);
+	margin-right: 30px;
 }
 
-.b {
-    font-size: 16px;
-    color: rgb(63,72,204);
-    margin-right: 30px;
-}
-
-.c {
+.genre{
 	font-size: 14px;
 }
 
-a:link, a:visited, a:active {
-    color: #ffffff;
-    text-decoration: none;
+#dataOfBook{
+	float: left;
 }
 
-a:hover {
-    background-color: #ffffff;
-    color: #1a205e;
-    text-decoration: none;
+#dataOfUser{
+	float: right;
+	width: 160
 }
 
-.box {
-    width: 300px;
-    height: 150px;
-    float: right;
-    border: 1px solid #ffffff;
-    margin-right: 20% ;
-}
-
-.box a:hover{
-    background-color: transparent;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+#absenden{
+	clear: both;
+	text-align: center;
 }

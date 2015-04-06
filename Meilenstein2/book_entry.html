@@ -9,38 +9,35 @@
 <title>Buch anlegen</title>
 </head>
 <body>
-	<p>
-		<span class="a">Buch anlegen</span>
-	</p>
+	<p>Buch anlegen</p>
 	<form method="get" action="http://martinakraus.net/createBookEntry.php">
-		<table>
-
+		<table id="dataOfBook">
 			<tr>
-				<td><span class="b">Titel des Buches </span></td>
+				<td><label>Titel des Buches </label></td>
 				<td><input type="text" name="titel" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
-				<td><span class="b">Buchautor</span></td>
+				<td><label>Buchautor</label></td>
 				<td><input type="text" name="autor" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
-				<td><span class="b">ISBN</span></td>
+				<td><label>ISBN</label></td>
 				<td><input type="text" name="isbn" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
-				<td><span class="b">Kapitel</span></td>
+				<td><label>Kapitel</label></td>
 				<td><input type="text" name="kapitel" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
-				<td><span class="b">Erscheinungsjahr</span></td>
+				<td><label>Erscheinungsjahr</label></td>
 				<td><input type="text" name="jahr" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
-				<td><span class="b">Auflage</span></td>
+				<td><label>Auflage</label></td>
 				<td><input type="text" name="auflage" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
-				<td><span class="b">Art des Buches</span>
+				<td><label>Art des Buches</label>
 				<td><select name="art" size="1">
 						<option value="ebook">eBook</option>
 						<option value="newspaper">Newspaper</option>
@@ -51,21 +48,43 @@
 				</select></td>
 			</tr>
 			<tr>
-				<td><span class="b">Genre</span></td>
-				<td><span class="c"><input type="checkbox" name="genre"
-						value="horror" checked="checked" />Horror <input type="checkbox"
-						name="genre" value="psycho" />Psycho<br> <input
-						type="checkbox" name="genre" value="krimi" />Krimi <input
-						type="checkbox" name="genre" value="doku" />Doku <input
-						type="checkbox" name="genre" value="komödie" />Komödie <input
-						type="checkbox" name="genre" value="romanze" />Romanze </span></td>
+				<td><label>Genre</label></td>
+				<td>
+					<table class="genre">
+						<tr>
+							<td><input type="checkbox" name="genre" value="horror"
+								checked="checked" />Horror</td>
+							<td><input type="checkbox" name="genre" value="doku" />Doku</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="genre" value="psycho" />Psycho</td>
+							<td><input type="checkbox" name="genre" value="komödie" />Komödie</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="genre" value="krimi" />Krimi</td>
+							<td><input type="checkbox" name="genre" value="romanze" />Romanze</td>
+						</tr>
+					</table>
+				</td>
 			</tr>
 		</table>
-		Ihr Vorname<input type="text" name="vorname" size="30" maxlength="40" />
-		<br> Ihr Nachname <input type="text" name="name" size="30"
-			maxlength="40" /> <br> Mein Favorit <input type="checkbox"
-			name="filmfavorit" /> <br><input type="submit" name="absenden"
-			value="Absenden" />
+		<table id="dataOfUser">
+			<tr>
+				<td><label>Ihr Vorname</label></td>
+				<td><input type="text" name="vorname" size="30" maxlength="40" /></td>
+			</tr>
+			<tr>
+				<td><label>Ihr Nachname</label></td>
+				<td><input type="text" name="name" size="30" maxlength="40" /></td>
+			</tr>
+			<tr>
+				<td><label>Mein Favorit</label></td>
+				<td><input type="checkbox" name="filmfavorit" /></td>
+			</tr>
+		</table>
+		<div id="absenden">
+			<input type="submit" name="absenden" value="Absenden" />
+		</div>
 	</form>
 </body>
 </html>

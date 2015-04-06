@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="book_entry.css">
+<link rel="stylesheet" type="text/css" href="internetBookDatabase.css">
 <style type="text/css">
 /* ... hier sind dateispezifische Formate erlaubt ... */
 </style>
@@ -11,36 +11,30 @@
 <body>
 	<p>Buch anlegen</p>
 	<form method="get" action="http://martinakraus.net/createBookEntry.php">
-		<table id="dataOfBook">
+		<table id="dataOfBook" class="entry">
 			<tr>
 				<td><label>Titel des Buches </label></td>
-				<td><input type="text" name="titel" size="30"
-					maxlength="40" /></td>
+				<td><input type="text" name="titel" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>Buchautor</label></td>
-				<td><input type="text" name="autor" size="30"
-					maxlength="40" /></td>
+				<td><input type="text" name="autor" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>ISBN</label></td>
-				<td><input type="text" name="isbn" size="30"
-					maxlength="40" /></td>
+				<td><input type="text" name="isbn" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>Kapitel</label></td>
-				<td><input type="text" name="kapitel" size="30"
-					maxlength="40" /></td>
+				<td><input type="text" name="kapitel" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>Erscheinungsjahr</label></td>
-				<td><input type="text" name="jahr" size="30"
-					maxlength="40" /></td>
+				<td><input type="text" name="jahr" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>Auflage</label></td>
-				<td><input type="text" name="auflage" size="30"
-					maxlength="40" /></td>
+				<td><input type="text" name="auflage" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>Art des Buches</label>
@@ -69,7 +63,7 @@
 				<td><input type="checkbox" name="genre" value="romanze" />Romanze</td>
 			</tr>
 		</table>
-		<table id="dataOfUser">
+		<table id="dataOfUser" class="entry">
 			<tr>
 				<td><label>Ihr Vorname</label></td>
 				<td><input type="text" name="vorname" size="30" maxlength="40" /></td>
@@ -87,5 +81,12 @@
 			<input type="submit" name="absenden" value="Absenden" />
 		</div>
 	</form>
+	<script type="text/javascript">
+	$('input[type=text]').on('keyup', function(e) {
+	    if (e.which == 13) {
+	        e.preventDefault();
+	    }
+	});
+	</script>
 </body>
 </html>

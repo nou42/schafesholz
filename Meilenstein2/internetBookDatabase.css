@@ -8,50 +8,44 @@ body {
 p {
 	text-align: center;
 	font-size: 22px;
+	color: rgb(63, 72, 204);
 	font-weight: bold;
-	color: rgb(63, 72, 204);
+	margin: 70px;
 }
 
-td {
-	padding: 3px;
-	vertical-align: top;
-	horizontal-align: left;
+span {
+	color: rgb(0, 0, 0);
 }
 
-th {
-	border-bottom: solid 1px black;
-}
-
-label {
-	font-size: 16px;
-	color: rgb(63, 72, 204);
-	margin-right: 30px;
-}
-
-.genre {
-	font-size: 14px;
-}
-
-#dataOfBook {
-	margin: 60px 0px 30px 60px;
-	float: left;
-	width: 560px;
-	overflow: scroll;
-}
-
-#dataOfUser {
-	margin: 60px 0px 30px 60px;
-	width: 480px;
-	float: left;
-	overflow: scroll;
-}
-
-#absenden {
-	clear: both;
+div {
 	text-align: center;
 }
 
+h1 {
+	color: rgb(63, 72, 204);
+	font-size: 72px;
+}
+
+input[type=button] {
+	color: rgb(0, 0, 0);
+	background-color: rgb(0, 162, 232);
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	width: 160px;
+	border-color: rgb(63, 72, 204);
+	border-style: solid;
+	border: 10px 10px;
+}
+
+input[type=button]:hover {
+	background-color: rgb(63, 72, 204);
+	cursor: pointer;
+}
+
 input[type=submit] {
+	color: rgb(63, 72, 204);
 	font-size: 14px;
 	padding: 5px 60px;
 	margin: 60px;
@@ -60,4 +54,53 @@ input[type=submit] {
 	border-color: rgb(63, 72, 204);
 	border-style: solid;
 	border: 10px 10px;
+}
+
+table.entry td {
+	padding: 3px;
+	vertical-align: top;
+	horizontal-align: left;
+}
+
+table.entry label {
+	font-size: 16px;
+	color: rgb(63, 72, 204);
+	margin-right: 30px;
+}
+
+input[type=checkbox] {
+	font-size: 14px;
+}
+
+#menu {
+	display: inline;
+	list-style: none;
+}
+
+#logo {
+	vertical-align: middle;
+	border: rgb(63, 72, 204);
+	margin: 20px 72px;
+	border-style: solid;
+	border: 10px 10px;
+	heigt: 245px;
+	width: 400px;
+	heigt: 245px;
+}
+
+#dataOfBook {
+	margin: 60px 0px 30px 60px;
+	float: left;
+	width: 560px;
+}
+
+#dataOfUser {
+	margin: 60px 0px 30px 60px;
+	width: 480px;
+	float: left;
+}
+
+#absenden {
+	clear: both;
+	text-align: center;
 }

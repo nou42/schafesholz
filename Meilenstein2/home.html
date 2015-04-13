@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="home.css">
+<link rel="stylesheet" type="text/css" href="internetBookDatabase.css">
 <style type="text/css">
 /* ... hier sind dateispezifische Formate erlaubt ... */
 </style>
@@ -11,22 +11,25 @@
 <body>
 
 	<p>
-		<span>I</span>nternet <span>B</span>ook<span> D</span>ata<span>b</span>ase
+		I<span>nternet </span>B<span>ook </span>D<span>ata</span>b<span>ase</span>
 	</p>
-	<div class="mitte">
+	<div>
 		<h1>
-			WE<img src="logo.png" alt="logo"></img>Book
+			WE<img id="logo" src="logo.png" alt="logo"></img>Book
 		</h1>
 	</div>
-		<div class="menu">
-			<a href="book_entry.html">Buch anlegen</a>
-		</div>
-		<div class="menu">
-			<a href="">Login</a>
-		</div>
-		<div class="menu">
-			<a href="">Registrieren</a>
-		</div>
-
+	<div>
+		<ul id="menu">
+			<li><a href="book_entry.html"> <input type="button"
+					name="buchAnlegen" value="Buch anlegen" />
+			</a></li>
+			<li><a href=""> <input type="button" name="login"
+					value="Login" />
+			</a></li>
+			<li><a href=""> <input type="button" name="registrieren"
+					value="Registrieren" />
+			</a></li>
+		</ul>
+	</div>
 </body>
 </html>

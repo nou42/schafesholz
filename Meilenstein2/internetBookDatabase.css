@@ -85,17 +85,23 @@ input[type=checkbox] {
 	border: 10px 10px;
 	heigt: 245px;
 	width: 400px;
-	heigt: 245px;
+	left: 100px;
 }
 
 #dataOfBook {
-	margin: 60px 0px 30px 60px;
+	
+	/*margin: 60px 0px 30px 60px;*/
+	position: relative;
+	left: 60px;
+	right: 60;
 	float: left;
 	width: 560px;
 }
 
 #dataOfUser {
-	margin: 60px 0px 30px 60px;
+	position: relative;
+	left: 60px;
+	right: 60;
 	width: 480px;
 	float: left;
 }

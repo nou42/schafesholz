@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book</title>
+<script type="text/javascript" src="book.js"></script>
+<script type="text/javascript" src="roman_books.json"></script>
+<script type="text/javascript" src="horror_books.json"></script>
+<link type="text/css" rel="stylesheet" href="internetBookDatabase.css">
+</head>
+<body onload="switchBooks(horror)">
+	<p>Meine Bücher</p>
+	<ul id="bookMenu">
+		<li><input type="button" value="Horror" onclick ="switchBooks(horror)"/></li>
+		<li><input type="button" value="Roman" onclick ="switchBooks(roman)"></li>
+	</ul>
+	<div id="id01"></div>
+</body>
+</html>

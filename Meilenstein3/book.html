@@ -8,12 +8,13 @@
 <script type="text/javascript" src="horror_books.json"></script>
 <link type="text/css" rel="stylesheet" href="internetBookDatabase.css">
 </head>
-<body onload="switchBooks(horror)">
+<body onload="switchTable(horror)">
+	<!--onload="switchBooks(horror)"-->
 	<p>Meine Bücher</p>
 	<ul id="bookMenu">
-		<li><input type="button" value="Horror" onclick ="switchBooks(horror)"/></li>
-		<li><input type="button" value="Roman" onclick ="switchBooks(roman)"></li>
+		<li><input type="button" value="Horror" onclick="switchTable(horror)" /></li>
+		<li><input type="button" value="Roman" onclick="switchTable(roman)"></li>
 	</ul>
-	<div id="id01"></div>
+	<div id="bookTableDiv"></div>
 </body>
 </html>

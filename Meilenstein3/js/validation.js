@@ -3,47 +3,47 @@ function validate() {
 	resetAllBorderColor();
 
 	// gehe bei allen Eingaben durch
-//	var titel = document.ourForm.titel;
-//	var vorname = document.ourForm.vorname;
-//	var name = document.ourForm.name;
-//	var autor = document.ourForm.autor;
-//	var isbn = document.ourForm.isbn;
-//	var jahr = document.ourForm.jahr;
-//	var auflage = document.ourForm.auflage;
-//
-//	if (blank(titel.value)) {
-//		notification();// Pop Up Fenster
-//		makeRedBorder(titel);// setze den Rahmen rot
-//		titel.focus();// setze Maus Cursor in das Feld
-//	} else if (!onlyLetter(autor.value)) {
-//		notification();
-//		makeRedBorder(autor);
-//		autor.focus();
-//	} else if (!onlyNumber(isbn.value) || (isbn.value.length > 13)) {
-//		notification();
-//		makeRedBorder(isbn);
-//		isbn.focus();
-//	} else if (!onlyNumber(jahr.value) || (jahr.value <= 0)
-//			|| jahr.value > 2015) {
-//		notification();
-//		makeRedBorder(jahr);
-//		jahr.focus();
-//	} else if (!onlyNumber(auflage.value) || (auflage < 0) || (auflage > 100)) {
-//		notification();
-//		makeRedBorder(auflage);
-//		auflage.focus();
-//	} else if (!onlyLetter(vorname.value)) {
-//		notification();
-//		makeRedBorder(vorname);
-//		vorname.focus();
-//	} else if (!onlyLetter(name.value)) {
-//		notification();
-//		makeRedBorder(name);
-//		name.focus();
-//	} else {
-//		// alles ist ok, schicke die Formular los
-//		document.ourForm.submit();
-//	}
+	var titel = document.ourForm.titel;
+	var vorname = document.ourForm.vorname;
+	var name = document.ourForm.name;
+	var autor = document.ourForm.autor;
+	var isbn = document.ourForm.isbn;
+	var jahr = document.ourForm.jahr;
+	var auflage = document.ourForm.auflage;
+
+	if (blank(titel.value)) {
+		notification();// Pop Up Fenster
+		makeRedBorder(titel);// setze den Rahmen rot
+		titel.focus();// setze Maus Cursor in das Feld
+	} else if (!onlyLetter(autor.value)) {
+		notification();
+		makeRedBorder(autor);
+		autor.focus();
+	} else if (!onlyNumber(isbn.value) || (isbn.value.length > 13)) {
+		notification();
+		makeRedBorder(isbn);
+		isbn.focus();
+	} else if (!onlyNumber(jahr.value) || (jahr.value <= 0)
+			|| jahr.value > 2015) {
+		notification();
+		makeRedBorder(jahr);
+		jahr.focus();
+	} else if (!onlyNumber(auflage.value) || (auflage < 0) || (auflage > 100)) {
+		notification();
+		makeRedBorder(auflage);
+		auflage.focus();
+	} else if (!onlyLetter(vorname.value)) {
+		notification();
+		makeRedBorder(vorname);
+		vorname.focus();
+	} else if (!onlyLetter(name.value)) {
+		notification();
+		makeRedBorder(name);
+		name.focus();
+	} else {
+		// alles ist ok, schicke die Formular los
+		document.ourForm.submit();
+	}
 }
 
 function notification() {
@@ -51,19 +51,17 @@ function notification() {
 }
 
 function makeRedBorder(inputField) {
-
+	inputField.style.outline = "solid 2px red";
 }
 
 function resetAllBorderColor() {
-    document.getElementById("dataOfBook").style.borderColor = "red";
-	var fields = document.getElementsByTagName("input");
-	for (var i = 0; i < fields.length; i++) {
-		if (fields[i].type == "text"){
-			fields[i].style.border: "thick solid #0000FF";
-//			fields[i].style.borderStyle: "solid";
-//			fields[i].style.borderWidth: "4px";
-		}
-	}
+	document.ourForm.titel.style.outline = "none";
+	document.ourForm.autor.style.outline = "none";
+	document.ourForm.isbn.style.outline = "none";
+	document.ourForm.jahr.style.outline = "none";
+	document.ourForm.auflage.style.outline = "none";
+	document.ourForm.vorname.style.outline = "none";
+	document.ourForm.name.style.outline = "none";
 }
 
 function onlyLetter(value) {// pruefe, ob alle Zeichen Buchstaben sind

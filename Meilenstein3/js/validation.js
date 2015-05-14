@@ -12,31 +12,38 @@ function validate() {
 	var auflage = document.ourForm.auflage;
 
 	if (blank(titel.value)) {
+		// Titel darf nicht leer sein
 		notification();// Pop Up Fenster
 		makeRedBorder(titel);// setze den Rahmen rot
 		titel.focus();// setze Maus Cursor in das Feld
 	} else if (!onlyLetter(autor.value)) {
+		// Buchautor besteht nur aus Buchstaben
 		notification();
 		makeRedBorder(autor);
 		autor.focus();
 	} else if (!onlyNumber(isbn.value) || (isbn.value.length > 13)) {
+		// ISBN besteht nur aus max. 13 Ziffer
 		notification();
 		makeRedBorder(isbn);
 		isbn.focus();
 	} else if (!onlyNumber(jahr.value) || (jahr.value <= 0)
 			|| jahr.value > 2015) {
+		// Erschscheinungsjahr kann nur eine Zahl und soll realistisch sein
 		notification();
 		makeRedBorder(jahr);
 		jahr.focus();
 	} else if (!onlyNumber(auflage.value) || (auflage < 0) || (auflage > 100)) {
+		// Auflage ist nur eine Zahl
 		notification();
 		makeRedBorder(auflage);
 		auflage.focus();
 	} else if (!onlyLetter(vorname.value)) {
+		// Vorname besteht nur aus Buchstaben
 		notification();
 		makeRedBorder(vorname);
 		vorname.focus();
 	} else if (!onlyLetter(name.value)) {
+		// Nachname besteht nur aus Buchstaben
 		notification();
 		makeRedBorder(name);
 		name.focus();

@@ -5,6 +5,10 @@
 	list-style: none;
 }
 
+＃menu li{
+	padding: 5px;
+}
+
 #logo {
 	vertical-align: middle;
 	border: rgb(63, 72, 204);

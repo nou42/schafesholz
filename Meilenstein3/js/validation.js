@@ -10,46 +10,57 @@ function validate() {
 	var isbn = document.ourForm.isbn;
 	var jahr = document.ourForm.jahr;
 	var auflage = document.ourForm.auflage;
+	var validate = true;
 
-	if (blank(titel.value)) {
-		// Titel darf nicht leer sein
-		notification();// Pop Up Fenster
-		makeRedBorder(titel);// setze den Rahmen rot
-		titel.focus();// setze Maus Cursor in das Feld
-	} else if (!onlyLetter(autor.value)) {
-		// Buchautor besteht nur aus Buchstaben
-		notification();
-		makeRedBorder(autor);
-		autor.focus();
-	} else if (!onlyNumber(isbn.value) || (isbn.value.length > 13)) {
-		// ISBN besteht nur aus max. 13 Ziffer
-		notification();
-		makeRedBorder(isbn);
-		isbn.focus();
-	} else if (!onlyNumber(jahr.value) || (jahr.value <= 0)
-			|| jahr.value > 2015) {
-		// Erschscheinungsjahr kann nur eine Zahl und soll realistisch sein
-		notification();
-		makeRedBorder(jahr);
-		jahr.focus();
-	} else if (!onlyNumber(auflage.value) || (auflage < 0) || (auflage > 100)) {
-		// Auflage ist nur eine Zahl
-		notification();
-		makeRedBorder(auflage);
-		auflage.focus();
-	} else if (!onlyLetter(vorname.value)) {
-		// Vorname besteht nur aus Buchstaben
-		notification();
-		makeRedBorder(vorname);
-		vorname.focus();
-	} else if (!onlyLetter(name.value)) {
+	if (!onlyLetter(name.value)) {
 		// Nachname besteht nur aus Buchstaben
-		notification();
 		makeRedBorder(name);
 		name.focus();
-	} else {
+		validate = false;
+	}
+	if (!onlyLetter(vorname.value)) {
+		// Vorname besteht nur aus Buchstaben
+		makeRedBorder(vorname);
+		vorname.focus();
+		validate = false;
+	}
+	if (!onlyNumber(auflage.value) || (auflage < 0) || (auflage > 100)) {
+		// Auflage ist nur eine Zahl
+		makeRedBorder(auflage);
+		auflage.focus();
+		validate = false;
+	}
+	if (!onlyNumber(jahr.value) || (jahr.value <= 0)
+			|| jahr.value > 2015) {
+		// Erschscheinungsjahr kann nur eine Zahl und soll realistisch sein
+		makeRedBorder(jahr);
+		jahr.focus();
+		validate = false;
+	}
+	if (!onlyNumber(isbn.value) || (isbn.value.length > 13)) {
+		// ISBN besteht nur aus max. 13 Ziffer
+		makeRedBorder(isbn);
+		isbn.focus();
+		validate = false;
+	}
+	if (!onlyLetter(autor.value)) {
+		// Buchautor besteht nur aus Buchstaben
+		makeRedBorder(autor);
+		autor.focus();
+		validate = false;
+	}
+	if (blank(titel.value)) {
+		// Titel darf nicht leer sein
+		makeRedBorder(titel);// setze den Rahmen rot
+		titel.focus();// setze Maus Cursor in das Feld
+		validate = false;
+	}
+	
+	if (validate){
 		// alles ist ok, schicke die Formular los
 		document.ourForm.submit();
+	}else{
+		notification();
 	}
 }
 

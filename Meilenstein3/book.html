@@ -9,12 +9,12 @@
 <link type="text/css" rel="stylesheet" href="css/internetBookDatabase.css">
 <link type="text/css" rel="stylesheet" href="css/book.css">
 </head>
-<body onload="switchTable(horror)">
-	<!-- onload="switchTable(horror)"-->
+<body onload="switchTable(horror, 0)">
+	<!-- onload="switchTable(horror, 0)"-->
 	<p>Meine Bücher</p>
 	<ul id="bookMenu">
-		<li><input type="button" value="Horror" onclick="switchTable(horror)" /></li>
-		<li><input type="button" value="Roman" onclick="switchTable(roman)"></li>
+		<li><input type="button" value="Horror" onclick="switchTable(horror,0)" /></li>
+		<li><input type="button" value="Roman" onclick="switchTable(roman,1)"></li>
 	</ul>
 	<div id="bookTableDiv"></div>
 </body>

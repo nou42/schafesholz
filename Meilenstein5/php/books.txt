@@ -1,0 +1,4 @@
+autor, titel1, 20 Kapitel, lexikon, 2379347, 1990, 2 Auflage;
+autor, titel2, 20 Kapitel, lexikon, 2379347, 1990, 2 Auflage;
+autor, titel3, 20 Kapitel, lexikon, 2379347, 1990, 2 Auflage;
+autor, titel4, 20 Kapitel, lexikon, 2379347, 1990, 2.Auflage;

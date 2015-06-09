@@ -1,5 +1,3 @@
-//read JSON data: http://www.w3schools.com/json/json_example.asp 
-var roman =
 [
 	{
 	"autor": "Paulo Coelho",

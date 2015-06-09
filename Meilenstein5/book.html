@@ -4,17 +4,14 @@
 <meta charset="UTF-8">
 <title>Book</title>
 <script type="text/javascript" src="js/book.js"></script>
-<script type="text/javascript" src="js/roman_books.json"></script>
-<script type="text/javascript" src="js/horror_books.json"></script>
 <link type="text/css" rel="stylesheet" href="css/internetBookDatabase.css">
 <link type="text/css" rel="stylesheet" href="css/book.css">
 </head>
-<body onload="switchTable(horror, 0)">
-	<!-- onload="switchTable(horror, 0)"-->
+<body onload="switchTable(0)">
 	<p>Meine Bücher</p>
 	<ul id="bookMenu">
-		<li><input type="button" value="Horror" onclick="switchTable(horror,0)" /></li>
-		<li><input type="button" value="Roman" onclick="switchTable(roman,1)"></li>
+		<li><input type="button" value="Horror" onclick="switchTable(0)" /></li>
+		<li><input type="button" value="Roman" onclick="switchTable(1)"></li>
 	</ul>
 	<div id="bookTableDiv"></div>
 </body>

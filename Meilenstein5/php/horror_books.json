@@ -1,6 +1,4 @@
-////read JSON data: http://www.w3schools.com/json/json_example.asp 
-
-var horror =[
+[
 	{
 	"autor": "Stephen King",
 	"titel": "The Stand - Das letzte Gefecht",

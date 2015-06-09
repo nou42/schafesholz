@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src = "js/validation.js"></script>
-<link rel="stylesheet" type="text/css" href="css/internetBookDatabase.css">
+<script type="text/javascript" src="js/validation.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="css/internetBookDatabase.css">
 <link type="text/css" rel="stylesheet" href="css/book_entry.css">
 <meta charset="UTF-8">
 <title>Buch anlegen</title>
 </head>
 <body>
 	<p>Buch anlegen</p>
-	<form name = "ourForm" method="get" action="php/buchanlegen.php">
+	<form name="ourForm" method="get" action="php/buchanlegen.php">
 		<table id="dataOfBook" class="entry">
 			<tr>
 				<td><label>Titel des Buches </label></td>
-				<td><input type="text" name="titel" size="30" maxlength="40"/></td>
+				<td><input type="text" name="titel" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>Buchautor</label></td>
-				<td><input type="text" name="autor" size="30" maxlength="40"/></td>
+				<td><input type="text" name="autor" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>ISBN</label></td>
-				<td><input type="text" name="isbn" size="30" maxlength="40"/></td>
+				<td><input type="text" name="isbn" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>Kapitel</label></td>
-				<td><input type="text" name="kapitel" size="30" maxlength="40"/></td>
+				<td><input type="text" name="kapitel" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>Erscheinungsjahr</label></td>
-				<td><input type="text" name="jahr" size="30" maxlength="40"/></td>
+				<td><input type="text" name="jahr" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>Auflage</label></td>
-				<td><input type="text" name="auflage" size="30" maxlength="40"/></td>
+				<td><input type="text" name="auflage" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>Art des Buches</label>
@@ -65,11 +66,11 @@
 		<table id="dataOfUser" class="entry">
 			<tr>
 				<td><label>Ihr Vorname</label></td>
-				<td><input type="text" name="vorname" size="30" maxlength="40"/></td>
+				<td><input type="text" name="vorname" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>Ihr Nachname</label></td>
-				<td><input type="text" name="name" size="30" maxlength="40"/></td>
+				<td><input type="text" name="name" size="30" maxlength="40" /></td>
 			</tr>
 			<tr>
 				<td><label>Mein Favorit</label></td>
@@ -77,15 +78,18 @@
 			</tr>
 		</table>
 		<div id="absenden">
-			<input type="button" name="absenden" value="Absenden" onclick = "validate()"/>
+			<input type="button" name="absenden" value="Absenden"
+				onclick="validate()" />
 		</div>
 	</form>
-	<script type="text/javascript">
+	<!--
+		<script type="text/javascript">
 		$('input[type=text]').on('keyup', function(e) {
 			if (e.which == 13) {
 				e.preventDefault();
 			}
 		});
 	</script>
+	 -->
 </body>
 </html>

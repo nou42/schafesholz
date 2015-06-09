@@ -18,7 +18,7 @@ function setTable(){
 	out += "</table>"
 	// fuegt die Tabelle zu dem Platzhalter
 	document.getElementById("bookTableDiv").innerHTML = out;
-	alert("!!!");
+	
 	setButtonColor(bookType);
 }
 
@@ -30,7 +30,7 @@ function setButtonColor(bookType){
 			b[i].style.backgroundColor = "rgb(0, 162, 232)";
 		}
 	}
-	document.getElementById(bookType).style.backgroundColor = "rgb(63, 72, 204)";
+	b[bookType].style.backgroundColor = "rgb(63, 72, 204)";
 }
 
 function getBooks(bookType){

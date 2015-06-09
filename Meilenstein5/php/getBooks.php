@@ -13,7 +13,7 @@ function getJson($jsonUrl) {
 	}
 	return $contents;
 }
-if ($_GET ['bookType'] == 'horror') {
+if ($_GET ['bookType'] == '0') {
 	print_r ( getJson ( 'horror_books.json' ) );
 } else {
 	print_r ( getJson ( 'roman_books.json' ) );

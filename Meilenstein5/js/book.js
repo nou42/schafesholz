@@ -1,7 +1,4 @@
 var books;
-function switchTable(bookType) {
-	getBooks(bookType);
-}
 function setTable(){
 	// bereite eine Tabelle vor
 	var i;
@@ -18,12 +15,9 @@ function setTable(){
 	out += "</table>"
 	// fuegt die Tabelle zu dem Platzhalter
 	document.getElementById("bookTableDiv").innerHTML = out;
-	
-	setButtonColor(bookType);
-}
 
+}
 function setButtonColor(bookType){
-	// setze Farbe des geklickten Buttons
 	var b = document.getElementsByTagName("input");
 	for(var i = 0; i<b.length;i++){
 		if(i != bookType){
@@ -47,7 +41,8 @@ function getBooks(bookType){
     xmlhttp.onreadystatechange = function() {
         if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         	books = JSON.parse(xmlhttp.responseText);
-            setTable();
+            setTable(bookType);
+        	setButtonColor(bookType);
         }
     }
     xmlhttp.send(null);

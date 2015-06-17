@@ -1,7 +1,0 @@
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;

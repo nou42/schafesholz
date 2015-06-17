@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+#dataOfBook {
+	/*margin: 60px 0px 30px 60px;*/
+	position: relative;
+	left: 200px;
+	float: left;
+	width: 560px;
+}
+
+#dataOfUser {
+	position: relative;
+	left: 200px;
+	width: 480px;
+	float: left;
+}
+
+#absenden {
+	clear: both;
+	text-align: center;
+}
+
+#absenden input[type=button] {
+	color: rgb(63, 72, 204);
+	font-size: 14px;
+	padding: 5px, 60px, 5px, 60px;
+	margin: 60px;
+	cursor: pointer;
+	background-color: rgb(0, 162, 232);
+	border-color: rgb(63, 72, 204);
+	border-style: solid;
+	border-width: 2px;
+}
+
+table.entry td {
+	padding: 3px;
+	vertical-align: top;
+	horizontal-align: left;
+	border: none;
+}
+
+table.entry label {
+	font-size: 16px;
+	color: rgb(63, 72, 204);
+	margin-right: 30px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/validation.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="css/internetBookDatabase.css">
+<link type="text/css" rel="stylesheet" href="css/book_entry.css">
+<meta charset="UTF-8">
+<title>Buch anlegen</title>
+</head>
+<body>
+	<p>Buch anlegen</p>
+	<form name="ourForm" method="get" action="php/buchanlegen.php">
+		<table id="dataOfBook" class="entry">
+			<tr>
+				<td><label>Titel des Buches </label></td>
+				<td><input type="text" name="titel" size="30" maxlength="40" /></td>
+			</tr>
+			<tr>
+				<td><label>Buchautor</label></td>
+				<td><input type="text" name="autor" size="30" maxlength="40" /></td>
+			</tr>
+			<tr>
+				<td><label>ISBN</label></td>
+				<td><input type="text" name="isbn" size="30" maxlength="40" /></td>
+			</tr>
+			<tr>
+				<td><label>Kapitel</label></td>
+				<td><input type="text" name="kapitel" size="30" maxlength="40" /></td>
+			</tr>
+			<tr>
+				<td><label>Erscheinungsjahr</label></td>
+				<td><input type="text" name="jahr" size="30" maxlength="40" /></td>
+			</tr>
+			<tr>
+				<td><label>Auflage</label></td>
+				<td><input type="text" name="auflage" size="30" maxlength="40" /></td>
+			</tr>
+			<tr>
+				<td><label>Art des Buches</label>
+				<td><select name="art" size="1">
+						<option value="ebook">eBook</option>
+						<option value="newspaper">Newspaper</option>
+						<option value="taschenbuch">Taschenbuch</option>
+						<option value="lexikon">Lexikon</option>
+						<option value="hardcover" selected="selected">Hardcover</option>
+						<option value="paperback">Paperback</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td rowspan="3"><label>Genre</label></td>
+
+				<td><input type="checkbox" name="genre" value="horror"
+					checked="checked" />Horror</td>
+				<td><input type="checkbox" name="genre" value="doku" />Doku</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="genre" value="psycho" />Psycho</td>
+				<td><input type="checkbox" name="genre" value="komoedie" />Komödie</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="genre" value="krimi" />Krimi</td>
+				<td><input type="checkbox" name="genre" value="romanze" />Romanze</td>
+			</tr>
+		</table>
+		<table id="dataOfUser" class="entry">
+			<tr>
+				<td><label>Ihr Vorname</label></td>
+				<td><input type="text" name="vorname" size="30" maxlength="40" /></td>
+			</tr>
+			<tr>
+				<td><label>Ihr Nachname</label></td>
+				<td><input type="text" name="name" size="30" maxlength="40" /></td>
+			</tr>
+			<tr>
+				<td><label>Mein Favorit</label></td>
+				<td><input type="checkbox" name="filmfavorit" /></td>
+			</tr>
+		</table>
+		<div id="absenden">
+			<input type="button" name="absenden" value="Absenden"
+				onclick="validate()" />
+		</div>
+	</form>
+</body>
+</html>

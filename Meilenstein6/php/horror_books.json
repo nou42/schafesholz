@@ -1,0 +1,65 @@
+[
+	{
+	"autor": "Stephen King",
+	"titel": "The Stand - Das letzte Gefecht",
+	"kapitel": 36,
+	"buchart": "Taschenbuch",
+	"ISBN": 9783404134113,
+	"erscheinungsjahr": 1992,
+	"auflage": 3
+	},
+	{
+	"autor": "Clive Barker",
+	"titel": "Imagica ", 
+	"kapitel": 12,
+	"buchart": "Taschenbuch",
+	"ISBN": 9783453082069,
+	"erscheinungsjahr": 1994,
+	"auflage": 1
+	},
+	{
+	"autor": "Clive Barker",
+	"titel": "Gyre",
+	"kapitel": 25,
+	"buchart": "Taschenbuch",
+	"ISBN": 9783453071698,
+	"erscheinungsjahr": 1994,
+	"auflage": 1
+	},
+	{
+	"autor": "Nancy A. Collins",
+	"titel": "Wildes Blut",
+	"kapitel": 24,
+	"buchart": "Hardcover",
+	"ISBN": 9783442081172,
+	"erscheinungsjahr": 1994,
+	"auflage": 1
+	},
+	{
+	"autor": "Dean R. Koontz",
+	"titel": "Mitternacht",
+	"kapitel": 13,
+	"buchart": "Taschenbuch",
+	"ISBN": 9783453056602,
+	"erscheinungsjahr": 2002,
+	"auflage": 1
+	},
+	{
+	"autor": "Stephen King",
+	"titel": "Schwarz",
+	"kapitel": 36,
+	"buchart": "Hardcover",
+	"ISBN": 9783453123847,
+	"erscheinungsjahr": 2000,
+	"auflage": 1
+	},
+	{
+	"autor": "Peter F. Hamilton",
+	"titel": "Hannibal",
+	"kapitel": 21,
+	"buchart": "Hardcover",
+	"ISBN": 9783404232345,
+	"erscheinungsjahr": 2001,
+	"auflage": 11
+	}
+]

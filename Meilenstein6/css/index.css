@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+#menu {
+	display: inline;
+	list-style: none;
+}
+
+＃menu li{
+	padding: 5px;
+}
+
+#logo {
+	vertical-align: middle;
+	border: rgb(63, 72, 204);
+	margin: 20px 50px 20px 100px;
+	border-style: solid;
+	border: 10px 10px;
+	width: 350px;
+}

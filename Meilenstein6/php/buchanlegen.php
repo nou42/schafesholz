@@ -2,16 +2,23 @@
 // Terminal: chmod 777 <Dateipfad>
 // Schreib/Leserechte für PHP freigeben
 
+function validate(){
+// TODO Validierung
+	if (isset ( $_GET ['autor'] ) && isset ( $_GET ['titel'] )
+			&& isset ( $_GET ['kapitel'] ) && isset ( $_GET ['art'] )
+			&& isset ( $_GET ['isbn'] ) && isset ( $_GET ['jahr'] )
+			&& isset ( $_GET ['auflage'] ) && isset ( $_GET['art'] )
+			&& isset ( $_GET ['genre'] )
+			&& isset ($_GET['name'])
+			&& isset($_GET['vorname'] )
+			&& isset($_GET['favorit'])){
+		return true;
+	} else {
+		return false;
+	}
+}
 // prüfen, ob alle Werte gesetzt sind
-if (isset ( $_GET ['autor'] ) && isset ( $_GET ['titel'] ) 
-		&& isset ( $_GET ['kapitel'] ) && isset ( $_GET ['art'] ) 
-		&& isset ( $_GET ['isbn'] ) && isset ( $_GET ['jahr'] ) 
-		&& isset ( $_GET ['auflage'] ) && isset ( $_GET['art'] )
-		&& isset ( $_GET ['genre'] ) 
-// 		&& isset ($_GET['name'])
-// 		&& isset($_GET['vorname'] ) 
-		&& isset($_GET['favorit'])) 
-{
+if (validate()){
 	$servername = 'localhost';
 	$user = 'root';
 	$password = '';

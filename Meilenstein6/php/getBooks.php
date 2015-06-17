@@ -21,7 +21,7 @@ function getBooks($typ) {
 	}else{
 		$abfrage = 'SELECT * FROM buecher WHERE genre !="horror";';
 	}
-	// Ergebnis holen
+	// Query ausführen und Ergebnis holen
 	$ergebnis = $connection->query ( $abfrage );
 	// in json parsen
 	$contents = "[";

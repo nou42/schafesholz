@@ -7,8 +7,11 @@ if (isset ( $_GET ['autor'] ) && isset ( $_GET ['titel'] )
 		&& isset ( $_GET ['kapitel'] ) && isset ( $_GET ['art'] ) 
 		&& isset ( $_GET ['isbn'] ) && isset ( $_GET ['jahr'] ) 
 		&& isset ( $_GET ['auflage'] ) && isset ( $_GET['art'] )
-		&& isset ( $_GET ['genre'] ) && isset ($_GET['name'])
-		&& isset($_GET['vorname'])&&isset($_GET['favorit'])) {
+		&& isset ( $_GET ['genre'] ) 
+// 		&& isset ($_GET['name'])
+// 		&& isset($_GET['vorname'] ) 
+		&& isset($_GET['favorit'])) 
+{
 	$servername = 'localhost';
 	$user = 'root';
 	$password = '';
@@ -21,12 +24,20 @@ if (isset ( $_GET ['autor'] ) && isset ( $_GET ['titel'] )
 		die ( "Connection failed: " . $connection->connect_error );
 	}
 	// Abfragen formulieren
-// 	$abfrage = "INSERT INTO `myBooks`.`buecher` 
-// 			(`titel`, `autor`, `isbn`, `kapitel`, `jahr`, `auflage`, `art`, `genre`) 
-// 			VALUES ('$_GET ['titel']', '$_GET ['autor'] ', '$_GET ['isbn']', '$_GET ['kapitel']', 
-// 			'$_GET ['jahr'] ', '$_GET ['auflage']', '$_GET['art']', '', '', '');";
+	// TODO Benutzer und isbn überprüfen
+	// Buch anlegen
+	$abfrage = "INSERT INTO `myBooks`.`buecher` 
+			(`titel`, `autor`, `isbn`, `kapitel`, `jahr`, `auflage`, `art`, `genre`) 
+			VALUES ('".$_GET ['titel']."', '".$_GET ['autor']." ', '".$_GET ['isbn']."', '".$_GET ['kapitel']."', 
+			'".$_GET ['jahr']." ', '".$_GET ['auflage']."', '".$_GET ['art']."', '".$_GET ['genre']."');";
+	// TODO Eintrag speichern
+	// Query ausführen
+	if ($connection->multi_query ( $abfrage ) === TRUE) {
+		echo "Daten gespeichert";
+	} else {
+		echo "Fehler: " . $connection->error;
+	}
 	$connection->close();
-	echo 'gespeichert';
 } else {
 	echo 'Daten fehlt';
 }

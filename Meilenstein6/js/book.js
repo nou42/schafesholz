@@ -37,6 +37,7 @@ function getBooks(bookType){
     else if (window.ActiveXObject) {
         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
+    alert(bookType);
     xmlhttp.open("GET", 'php/getBooks.php?bookType='+bookType);
     xmlhttp.onreadystatechange = function() {
         if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {

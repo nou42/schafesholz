@@ -38,7 +38,6 @@ function getBooks($typ) {
 	return $contents;
 }
 
-	echo $_GET ['bookType'];
 if ($_GET ['bookType'] == 0) {
 print_r ( getBooks ( 'horror' ) );
 } else {

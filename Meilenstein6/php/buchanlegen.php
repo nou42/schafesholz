@@ -69,7 +69,7 @@ if (validate()){
 		echo "Daten gespeichert";
 	} else {
 		// ein User dasselbe Buch mehrmals abspeichert
-		if($connection->error == "Duplicate entry 'Müller-Tina-9783442482320' for key 'PRIMARY'")
+		if(preg_match("/^Duplicate entry/",$connection->error))
 			echo "Es ist nicht möglich, dass ein User mit demselben Vor- und Nachnamen dasselbe Buch
 			mehrmals abspeichert (unabhängig ob er es als Favorit markiert oder nicht).<br>";
 		echo "Fehler: " . $connection->error;

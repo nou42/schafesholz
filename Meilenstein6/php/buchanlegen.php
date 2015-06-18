@@ -40,6 +40,9 @@ function validate(){
 		$validate = false;
 		echo 'Eingabe "Vorname" ungültig<br>';
 	}
+		if(!$validate){
+			echo '<a href = "javascript:history.go(-1)">Zurück</a><br>';
+		}
 		return $validate;
 }
 // prüfen, ob alle Werte gesetzt sind
@@ -77,5 +80,7 @@ if (validate()){
 	// schließt die Datenbank
 	$connection->close();
 }
+
+echo "<a href = ../index.html>Home</a>"
 
 ?>

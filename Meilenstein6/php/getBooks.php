@@ -34,6 +34,7 @@ function getBooks($typ) {
 	}
 	$contents = substr($contents,0,-1);
 	$contents = $contents . "]";
+	// schließt die Datenbank
 	$connection->close();
 	return $contents;
 }

@@ -4,7 +4,7 @@
 function validate(){
 	// Validierung
 	$validate = true;
-	if (!isset ( $_GET ['autor'] ) ||! preg_match ( "/^[A-Za-z. ]+$/", $_GET ['autor'] )) {
+	if (!isset ( $_GET ['autor'] ) ||! preg_match ( "/^[A-Za-züöäÜÖÄß. ]+$/", $_GET ['autor'] )) {
 		$validate = false;
 		echo 'Eingabe "Autor" ungültig<br>';
 	}
@@ -32,11 +32,11 @@ function validate(){
 		$validate = false;
 		echo 'Wählen Sie ein Genre aus<br>';
 	}
-	if (!isset ( $_GET ['name'] ) ||! preg_match ( "/^[A-Za-z.]+$/", $_GET ['name'] )) {
+	if (!isset ( $_GET ['name'] ) ||! preg_match ( "/^[A-Za-z.üöäÜÖÄß]+$/", $_GET ['name'] )) {
 		$validate = false;
 		echo 'Eingabe "Nachname" ungültig<br>';
 	}
-	if (!isset ( $_GET ['vorname'] )||! preg_match ( "/^[A-Za-z.]+$/", $_GET ['vorname'] )) {
+	if (!isset ( $_GET ['vorname'] )||! preg_match ( "/^[A-Za-z.üöäÜÖÄß]+$/", $_GET ['vorname'] )) {
 		$validate = false;
 		echo 'Eingabe "Vorname" ungültig<br>';
 	}

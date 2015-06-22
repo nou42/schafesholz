@@ -81,6 +81,6 @@ if (validate()){
 	$connection->close();
 }
 
-echo "<a href = ../index.html>Home</a>"
+echo "<br><a href = ../index.html>Home</a>"
 
 ?>

@@ -20,7 +20,7 @@ function validate(){
 		$validate = false;
 		echo 'Eingabe "ISBN" ungültig<br>';
 	}
-	if (!isset ( $_GET ['jahr'] ) ||! preg_match ( "/^[0-9]{4}$/", $_GET ['jahr'] )) {
+	if (!isset ( $_GET ['jahr'] ) ||! preg_match ( "/^[0-9]{4}$/", $_GET ['jahr'] )||$_GET['jahr']>=3000||$_GET['jahr']<1000) {
 		$validate = false;
 		echo 'Eingabe "Jahr" ungültig<br>';
 	}

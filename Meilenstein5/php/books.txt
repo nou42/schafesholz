@@ -1,7 +1,3 @@
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;
-BeispielAutor, BeispielTitel,  Kapitel, hardcover, 07102792, 1998, 3.Auflage;
+sf, vrv,  Kapitel, hardcover, 11111111111, 2004, 2.Auflage;
+sf, vrv,  Kapitel, hardcover, 11111111111, 2004, 2.Auflage;
+sf, vrv,  Kapitel, hardcover, 11111111111, 2004, 2.Auflage;
